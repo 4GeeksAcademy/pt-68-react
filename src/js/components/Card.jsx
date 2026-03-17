@@ -1,5 +1,5 @@
 import React from "react";
-
+//este componente trae cartas con la misma informacion. 
 export const Card = () => {
     return (
         <div>
