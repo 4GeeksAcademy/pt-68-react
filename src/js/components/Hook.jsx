@@ -1,4 +1,4 @@
-import React, { useState } from "react";  //primer paso: importar el estado 
+import React, { useState, useEffect, useContext } from "react";  //primer paso: importar el estado 
 
 export const Hook = () => {
 
@@ -11,7 +11,7 @@ export const Hook = () => {
     //useState guarda el valor inicial del estado "(0)""
 
 
-    const [texto, setTexto] =useState("Seguir")
+    const [texto, setTexto] = useState("Seguir")
     const [btnColor, setBtnColor] = useState("btn-success")
 
 
@@ -30,19 +30,17 @@ export const Hook = () => {
             setBtnColor("btn-success")
         }
 
-
-
     }
 
     // También se puede utilizar así: <Fragment></Fragment>
     return (
         <>
-
+            <h2>Contador usando useState</h2>
             {/* esto muestra el valor del estado actual */}
             <p> el contador es {contador} </p>
 
             {/* el boton llama a la funcion  */}
-            <button className={"btn " +btnColor} onClick={incrementar}>{texto}</button>
+            <button className={"btn " + btnColor} onClick={incrementar}>{texto}</button>
 
         </>
 
