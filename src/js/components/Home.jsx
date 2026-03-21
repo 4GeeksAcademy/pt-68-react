@@ -4,9 +4,10 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 import Navbar from "./Navbar.jsx";  //importar el componente 
-import { Card } from "./Card.jsx"
+import { Card } from "./Card.jsx";
 
 import CardMenu from "./CardMenu.jsx";
+import { Hook } from "./Hook.jsx";
 
 //create your first component
 const Home = () => {
@@ -38,7 +39,7 @@ const Home = () => {
 			<h3>clase 2 de react</h3>
 
 			{/* esto es la forma en que paso informacion por props, pero no es la mejor */}
-			
+
 			{/* <CardMenu nombre= "pasta" descripcion= "comida italiana tradicional"/>
 		        <CardMenu nombre= "sopa" descripcion= "plato nutritivo caliente"/> */}
 
@@ -49,13 +50,20 @@ const Home = () => {
 
 			{recetas.map((item, index) => (
 				<CardMenu
-				    key={index} 
+					key={index}
 					nombre={item.nombre}
-					descripcion={item.descripcion} 
-				 />
+					descripcion={item.descripcion}
+				/>
 			))}
 
 
+
+
+
+			<div>
+				<Hook />
+
+			</div>
 		</div>
 	);
 };
