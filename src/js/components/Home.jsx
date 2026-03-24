@@ -8,7 +8,7 @@ import { Card } from "./Card.jsx";
 
 import CardMenu from "./CardMenu.jsx";
 import { Hook } from "./Hook.jsx";
-
+import Form from "./Form.jsx"
 //create your first component
 const Home = () => {
 	//la logica va en este espacio (JS)
@@ -63,6 +63,10 @@ const Home = () => {
 			<div>
 				<Hook />
 
+			</div>
+			<div>
+			 <h2>Formulario </h2>
+				<Form/>
 			</div>
 		</div>
 	);
