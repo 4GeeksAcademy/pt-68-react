@@ -11,6 +11,7 @@ import { Hook } from "./Hook.jsx";
 import Form from "./Form.jsx"
 
 import { RickApi } from "./RickApi.jsx";
+import { TodoListApi } from "./TodoListApi.jsx";
 
 //create your first component
 const Home = () => {
@@ -75,6 +76,11 @@ const Home = () => {
 			<div>
 			 <h2>Consumiendo mi primera Api  </h2>
 				<RickApi/>
+			</div>
+
+			<div>
+			 <h2>Consumiendo la api del todo list </h2>
+				<TodoListApi/>
 			</div>
 		</div>
 	);
